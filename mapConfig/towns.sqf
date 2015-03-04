@@ -5,12 +5,12 @@
 //	@file Author: AgentRev, JoSchaap
 
 [
-	["Town_1",40,"Kameny Base"],
-	["Town_2",130,"Kameny"],
-	["Town_3",60,"Kameny Parking"],
-	["Town_4",75,"Strelka Base"],
-	["Town_5",100,"Strelka"],
-	["Town_6",50,"Prigorodki"],
-	["Town_7",75,"Pulkovo"],
-	["Town_8",40,"Castle"]
+	["Town_1",50,"North Strelka"],
+	["Town_2",160,"Kameny"],
+	["Town_3",50,"Kameny base"],
+	["Town_4",60,"Kameny parking"],
+	["Town_5",30,"Lighthouse"],
+	["Town_6",90,"Air Traffic Control"],
+	["Town_7",75,"Military Compound"],
+	["Town_8",130,"Strelka"]
 ]
