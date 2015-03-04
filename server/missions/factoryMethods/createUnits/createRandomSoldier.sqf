@@ -18,7 +18,7 @@ if (!isServer) exitWith {};
 private ["_soldierTypes", "_uniformTypes", "_vestTypes", "_weaponTypes", "_group", "_position", "_rank", "_soldier"];
 
 _soldierTypes = ["C_man_polo_1_F", "C_man_polo_2_F", "C_man_polo_3_F", "C_man_polo_4_F", "C_man_polo_5_F", "C_man_polo_6_F"];
-_uniformTypes = ["U_B_CombatUniform_mcam_vest", "U_B_CombatUniform_mcam_tshirt" ,"U_B_CombatUniform_mcam"];
+_uniformTypes = ["rhs_uniform_flora","rhs_uniform_vdv_flora","rhs_uniform_flora_patchless","rhs_uniform_vdv_mflora","rhs_uniform_mflora_patchless","rhs_uniform_msv_emr","rhs_uniform_vdv_emr","rhs_uniform_emr_patchless","rhs_uniform_df15","rhs_uniform_cu_ucp","rhs_uniform_cu_ocp_patchless","rhs_uniform_cu_ucp","rhs_uniform_cu_ucp_patchless"];
 _vestTypes = ["V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"];
 _weaponTypes = ["arifle_TRG20_F","LMG_Mk200_F","arifle_MXM_F","arifle_MX_GL_F"];
 
