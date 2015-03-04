@@ -203,7 +203,9 @@ throwputArray = compileFinal str
 	["TM-62M AT", "rhs_mine_tm62m", 350],
 	["M67 Frag Grenade", "rhs_mag_m67", 100],
 	["M84 Stun Grenade", "rhs_ammo_m84", 100],
-	["M19 AT", "rhs_mine_M19_ammo", 300]
+	["M19 AT", "rhs_mine_M19_ammo", 300],
+	["Explosive Charge", "DemoCharge_Remote_Mag", 450],
+	["Explosive Satchel", "SatchelCharge_Remote_Mag", 500]
 // Why didn't they also re-add the rocks from A2? throwing rocks is awesome!
 ];
 
