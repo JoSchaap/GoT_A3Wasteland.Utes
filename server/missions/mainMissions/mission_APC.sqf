@@ -22,7 +22,9 @@ _setupVars =
 		"O_APC_Tracked_02_cannon_F",
 		"I_APC_tracked_03_cannon_F",
 		"B_APC_Tracked_01_AA_F",
-		"O_APC_Tracked_02_AA_F"
+		"O_APC_Tracked_02_AA_F",
+		// adding RHS/HLC vehicles
+		"rhs_btr60_msv", "rhs_btr60_vdv", "rhs_btr60_vmf", "rhs_btr60_vv", "rhs_btr70_msv", "rhs_btr70_vdv", "rhs_btr70_vmf", "rhs_btr70_vv", "rhs_btr80_msv", "rhs_btr80_vdv", "rhs_btr80_vmf", "rhs_btr80_vv", "rhs_btr80a_msv", "rhs_btr80a_vdv", "rhs_btr80a_vmf", "rhs_btr80a_vv"
 	] call BIS_fnc_selectRandom;
 
 	_missionType = switch (true) do
