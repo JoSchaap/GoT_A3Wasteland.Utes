@@ -17,8 +17,25 @@ _setupVars =
 	[
 		"B_MBT_01_cannon_F",
 		"O_MBT_02_cannon_F",
-		"I_MBT_03_cannon_F"
-	] call BIS_fnc_selectRandom;
+		"I_MBT_03_cannon_F",
+		
+		//add RHS/HLC Vehicles
+		"rhs_sprut_vdv", 
+		"rhs_t72ba_tv", 
+		"rhs_t72bb_tv", 
+		"rhs_t72bc_tv", 
+		"rhs_t72bd_tv", 
+		"rhsusf_m1a1aimwd_usarmy", 
+		"rhsusf_m1a1aimd_usarmy", 
+		"rhsusf_m1a1aim_tuski_wd", 
+		"rhsusf_m1a1aim_tuski_d", 
+		"rhsusf_m1a1fep_wd", 
+		"rhsusf_m1a1fep_d", 
+		"rhsusf_m1a2sep1wd_usarmy", 
+		"rhsusf_m1a2sep1d_usarmy", 
+		"rhsusf_m1a2sep1tuskiwd_usarmy", 
+		"rhsusf_m1a2sep1tuskid_usarmy"
+] call BIS_fnc_selectRandom;
 
 	_missionType = "Main Battle Tank";
 	_locationsArray = MissionSpawnMarkers;
