@@ -20,7 +20,9 @@ _setupVars =
 		"O_MRAP_02_hmg_F",
 		"O_MRAP_02_gmg_F",
 		"I_MRAP_03_hmg_F",
-		"I_MRAP_03_gmg_F"
+		"I_MRAP_03_gmg_F",
+		// add RHS/HLC vehicles
+		"rhs_prp3_msv", "rhs_prp3_tv", "rhs_prp3_vdv", "rhs_prp3_vv", "rhs_zsu234_aa", "RHS_M2A2", "RHS_M2A3", "RHS_M6_wd", "RHS_M6"
 	] call BIS_fnc_selectRandom;
 
 	_missionType = "Light Armed Vehicle";
