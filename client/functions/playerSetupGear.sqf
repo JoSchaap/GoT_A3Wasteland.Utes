@@ -33,15 +33,15 @@ if (hmd _player != "") then { _player unlinkItem hmd _player };
 // Add NVG
 _player linkItem "NVGoggles";
 
-_player addBackpack "B_AssaultPack_rgr";
+_player addBackpack "rhs_sidor";
 
-_player addMagazine "9Rnd_45ACP_Mag";
-_player addWeapon "hgun_ACPC2_F";
-_player addMagazine "9Rnd_45ACP_Mag";
-_player addMagazine "9Rnd_45ACP_Mag";
-_player addMagazine "9Rnd_45ACP_Mag";
+_player addMagazine "rhs_mag_9x19_17";
+_player addWeapon "rhs_weap_pya";
+_player addMagazine "rhs_mag_9x19_17";
+_player addMagazine "rhs_mag_9x19_17";
+_player addMagazine "rhs_mag_9x19_17";
 _player addItem "FirstAidKit";
-_player selectWeapon "hgun_ACPC2_F";
+_player selectWeapon "rhs_weap_pya";
 
 switch (true) do
 {

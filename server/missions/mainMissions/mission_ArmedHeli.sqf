@@ -20,7 +20,9 @@ _setupVars =
 		"B_Heli_Attack_01_F",
 		"O_Heli_Light_02_F",
 		"O_Heli_Attack_02_F",
-		"I_Heli_light_03_F"
+		"I_Heli_light_03_F",
+		// add RHS/HLC vehicles
+		"rhs_ah64d_wd", "rhs_ah64d", "rhs_uh60m", "rhs_uh60m_d", "RHS_Ka52_vvs", "RHS_Ka52_vvsc", "RHS_Mi24P_vdv", "RHS_Mi24V_vvs", "RHS_Mi24V_vvsc", "RHS_Mi8AMTSh_vdv", "RHS_Mi8AMTSh_vvsc"
 	] call BIS_fnc_selectRandom;
 
 	_missionType = "Armed Helicopter";
