@@ -1927,13 +1927,13 @@ class Mission
 			special="NONE";
 			id=159;
 			side="EMPTY";
-			vehicle="O_Plane_CAS_02_F";
+			vehicle="rhs_a10";
 			lock="LOCKED";
 			skill=0.2;
 			health=0.037973914;
 			fuel=0;
 			ammo=0;
-			init="[this, true] call A3W_fnc_setupMissionObject";
+			init="[this, true] call A3W_fnc_setupMissionObject; this setDamage 1";
 			description="DO NOT MODIFY IN EDITOR";
 		};
 		class Item11
