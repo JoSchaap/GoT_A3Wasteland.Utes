@@ -25,7 +25,7 @@ _setupObjects =
 	}
 	else
 	{
-		["B_Heli_Light_01_armed_F", "O_Heli_Light_02_F", "I_Heli_light_03_F", "rhs_uh60m"] call BIS_fnc_selectRandom;
+		["B_Heli_Light_01_armed_F", "rhs_ch_47f_light", "O_Heli_Light_02_F", "I_Heli_light_03_F", "rhs_uh60m"] call BIS_fnc_selectRandom;
 	};
 
 	_createVehicle =
@@ -50,7 +50,7 @@ _setupObjects =
 
 		switch (true) do
 		{
-			case (_type isKindOf "Heli_Transport_01_base_F"):
+			case (_type isKindOf "Heli_Transport_01_base_F" || _type isKindOf "rhs_ch_47f_light"):
 			{
 				// these choppers have 2 turrets so we need 2 gunners
 				_soldier = [_aiGroup, _position] call createRandomSoldierC;

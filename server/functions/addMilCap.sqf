@@ -19,9 +19,9 @@ waitUntil {uiSleep 0.5; !isNil {_unit getVariable "BIS_randomSeed2"} || headgear
 
 if (leader _unit == _unit) then
 {
-	_unit addHeadgear "H_MilCap_blue";
+	_unit addHeadgear "rhs_Booniehat_m81";
 }
 else
 {
-	_unit addHeadgear "H_MilCap_mcamo";
+	_unit addHeadgear "rhs_Booniehat_marpatwd";
 };

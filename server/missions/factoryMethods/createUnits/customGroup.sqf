@@ -37,51 +37,51 @@ for "_i" from 1 to _nbUnits do
 	removeHeadgear _unit;
 	removeGoggles _unit;
 
-	_unit addVest "V_PlateCarrier1_rgr";
-	_unit addMagazine "30Rnd_556x45_Stanag";
-	_unit addMagazine "30Rnd_556x45_Stanag";
-	_unit addMagazine "30Rnd_556x45_Stanag";
+	_unit addVest "rhsusf_spc";
+	_unit addMagazine "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+	_unit addMagazine "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+	_unit addMagazine "rhs_mag_30Rnd_556x45_M855A1_Stanag";
 
 	switch (true) do
 	{
 		// Grenadier every 3 units
 		case (_i % 3 == 0):
 		{
-			_unit addUniform "U_B_CombatUniform_mcam_vest";
-			_unit addMagazine "1Rnd_HE_Grenade_shell";
-			_unit addWeapon "arifle_TRG21_GL_F";
-			_unit addMagazine "1Rnd_HE_Grenade_shell";
-			_unit addMagazine "1Rnd_HE_Grenade_shell";
+			_unit addUniform "rhs_uniform_FROG01_wd";
+			_unit addMagazine "rhs_mag_M433_HEDP";
+			_unit addWeapon "rhs_m4a1_m320 ";
+			_unit addMagazine "rhs_mag_M433_HEDP";
+			_unit addMagazine "rhs_mag_M433_HEDP";
 		};
 		// RPG every 7 units, starting from second one
 		case ((_i + 5) % 7 == 0):
 		{
-			_unit addUniform "U_B_CombatUniform_mcam_tshirt";
-			_unit addBackpack "B_Kitbag_mcamo";
-			_unit addWeapon "arifle_TRG20_F";
-			_unit addMagazine "Titan_AT";
-			_unit addWeapon "launch_Titan_short_F";
-			_unit addMagazine "Titan_AT";
-			_unit addMagazine "Titan_AT";
+			_unit addUniform "rhs_uniform_cu_ocp_patchless";
+			_unit addBackpack "rhsusf_assault_eagleaiii_coy";
+			_unit addWeapon "rhs_weap_m4a1_grip2 ";
+			_unit addMagazine "rhs_ammo_tow_at";
+			_unit addWeapon "rhs_weap_tow_launcher";
+			_unit addMagazine "rhs_ammo_tow_at";
+			_unit addMagazine "rhs_ammo_tow_at";
 		};
 		// Rifleman
 		default
 		{
-			_unit addUniform "U_B_CombatUniform_mcam";
+			_unit addUniform "rhs_uniform_cu_ucp_patchless";
 
 			if (_unit == leader _group) then
 			{
-				_unit addWeapon "arifle_TRG21_F";
+				_unit addWeapon "rhs_weap_m4a1_blockII_grip2";
 				_unit setRank "SERGEANT";
 			}
 			else
 			{
-				_unit addWeapon "arifle_TRG20_F";
+				_unit addWeapon "rhs_weap_m4a1";
 			};
 		};
 	};
 
-	_unit addPrimaryWeaponItem "acc_flashlight";
+	_unit addPrimaryWeaponItem "rhsusf_acc_anpeq15_light";
 	_unit enablegunlights "forceOn";
 
 	_unit addRating 1e11;
