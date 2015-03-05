@@ -37,46 +37,46 @@ for "_i" from 1 to _nbUnits do
 	removeHeadgear _unit;
 	removeGoggles _unit;
 
-	_unit addVest "rhsusf_spc";
-	_unit addMagazine "rhs_mag_30Rnd_556x45_M855A1_Stanag";
-	_unit addMagazine "rhs_mag_30Rnd_556x45_M855A1_Stanag";
-	_unit addMagazine "rhs_mag_30Rnd_556x45_M855A1_Stanag";
+	_unit addVest "V_PlateCarrier1_rgr";
+	_unit addMagazine "30Rnd_556x45_Stanag";
+	_unit addMagazine "30Rnd_556x45_Stanag";
+	_unit addMagazine "30Rnd_556x45_Stanag";
 
 	switch (true) do
 	{
 		// Grenadier every 3 units
 		case (_i % 3 == 0):
 		{
-			_unit addUniform "rhs_uniform_FROG01_wd";
+			_unit addUniform "rhs_uniform_cu_ocp";
 			_unit addMagazine "rhs_mag_M433_HEDP";
-			_unit addWeapon "rhs_m4a1_m320 ";
+			_unit addWeapon "rhs_m4a1_m320_acog2";
 			_unit addMagazine "rhs_mag_M433_HEDP";
 			_unit addMagazine "rhs_mag_M433_HEDP";
 		};
 		// RPG every 7 units, starting from second one
 		case ((_i + 5) % 7 == 0):
 		{
-			_unit addUniform "rhs_uniform_cu_ocp_patchless";
+			_unit addUniform "rhs_uniform_cu_ocp";
 			_unit addBackpack "rhsusf_assault_eagleaiii_coy";
-			_unit addWeapon "rhs_weap_m4a1_grip2 ";
-			_unit addMagazine "rhs_ammo_tow_at";
-			_unit addWeapon "rhs_weap_tow_launcher";
-			_unit addMagazine "rhs_ammo_tow_at";
-			_unit addMagazine "rhs_ammo_tow_at";
+			_unit addWeapon "rhs_m4a1_grip_acog3";
+			_unit addMagazine "rhs_m136_mag";
+			_unit addWeapon "rhs_weap_M136";
+			_unit addMagazine "rhs_m136_mag";
+			_unit addMagazine "rhs_m136_mag";
 		};
 		// Rifleman
 		default
 		{
-			_unit addUniform "rhs_uniform_cu_ucp_patchless";
+			_unit addUniform "rhs_uniform_cu_ocp";
 
 			if (_unit == leader _group) then
 			{
-				_unit addWeapon "rhs_weap_m4a1_blockII_grip2";
+				_unit addWeapon "rhs_m4a1_grip_acog";
 				_unit setRank "SERGEANT";
 			}
 			else
 			{
-				_unit addWeapon "rhs_weap_m4a1";
+				_unit addWeapon "rhs_m4a1_grip_acog2";
 			};
 		};
 	};

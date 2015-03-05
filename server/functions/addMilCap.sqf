@@ -23,5 +23,5 @@ if (leader _unit == _unit) then
 }
 else
 {
-	_unit addHeadgear "rhs_Booniehat_marpatwd";
+	_unit addHeadgear "rhs_Booniehat_ocp";
 };
