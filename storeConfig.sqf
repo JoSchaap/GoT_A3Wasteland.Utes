@@ -157,35 +157,7 @@ allGunStoreFirearms = compileFinal str (call pistolArray + call smgArray + call 
 
 staticGunsArray = compileFinal str
 [
-	// enabling these on utes would be stupid..
-	// ["Vehicle Ammo Crate", "Box_NATO_AmmoVeh_F", 2500],
-	// ["Static Titan AT 4Rnd (NATO)", "B_static_AT_F", 2500], // Static launchers only have 4 ammo, hence the low price
-	// ["Static Titan AT 4Rnd (CSAT)", "O_static_AT_F", 2500],
-	// ["Static Titan AT 4Rnd (AAF)", "I_static_AT_F", 2500],
-	// ["Static Titan AA 4Rnd (NATO)", "B_static_AA_F", 3000],
-	// ["Static Titan AA 4Rnd (CSAT)", "O_static_AA_F", 3000],
-	// ["Static Titan AA 4Rnd (AAF)", "I_static_AA_F", 3000],
-	// ["Mk30 HMG .50 Low tripod (NATO)", "B_HMG_01_F", 2000],
-	// ["Mk30 HMG .50 Low tripod (CSAT)", "O_HMG_01_F", 2000],
-	// ["Mk30 HMG .50 Low tripod (AAF)", "I_HMG_01_F", 2000],
-	// ["Mk30A HMG .50 Sentry (NATO)", "B_HMG_01_A_F", 5000], // "A" = Autonomous = Overpowered
-	// ["Mk30A HMG .50 Sentry (CSAT)", "O_HMG_01_A_F", 5000],
-	// ["Mk30A HMG .50 Sentry (AAF)", "I_HMG_01_A_F", 5000],
-	// ["Mk30 HMG .50 High tripod (NATO)", "B_HMG_01_high_F", 3000],
-	// ["Mk30 HMG .50 High tripod (CSAT)", "O_HMG_01_high_F", 3000],
-	// ["Mk30 HMG .50 High tripod (AAF)", "I_HMG_01_high_F", 3000],
-	// ["Mk32 GMG 20mm Low tripod (NATO)", "B_GMG_01_F", 5000],
-	// ["Mk32 GMG 20mm Low tripod (CSAT)", "O_GMG_01_F", 5000],
-	// ["Mk32 GMG 20mm Low tripod (AAF)", "I_GMG_01_F", 5000],
-	// ["Mk32A GMG 20mm Sentry (NATO)", "B_GMG_01_A_F", 10000],
-	// ["Mk32A GMG 20mm Sentry (CSAT)", "O_GMG_01_A_F", 10000],
-	// ["Mk32A GMG 20mm Sentry (AAF)", "I_GMG_01_A_F", 10000],
-	// ["Mk32 GMG 20mm High tripod (NATO)", "B_GMG_01_high_F", 6000],
-	// ["Mk32 GMG 20mm High tripod (CSAT)", "O_GMG_01_high_F", 6000],
-	// ["Mk32 GMG 20mm High tripod (AAF)", "I_GMG_01_high_F", 6000],
-	// ["Mk6 Mortar (NATO)", "B_Mortar_01_F", 12500],
-	// ["Mk6 Mortar (CSAT)", "O_Mortar_01_F", 12500],
-	// ["Mk6 Mortar (AAF)", "I_Mortar_01_F", 12500]
+	// nope.. not on utes
 ];
 
 throwputArray = compileFinal str
@@ -619,12 +591,6 @@ backpackArray = compileFinal str
 
 genItemArray = compileFinal str
 [
-//	["Quadrotor UAV (NATO)", "B_UAV_01_backpack_F", 500, "backpack"],
-//	["Quadrotor UAV (CSAT)", "O_UAV_01_backpack_F", 500, "backpack"],
-//	["Quadrotor UAV (AAF)", "I_UAV_01_backpack_F", 500, "backpack"],
-//	["UAV Terminal (NATO)", "B_UavTerminal", 150, "gps"],
-//	["UAV Terminal (CSAT)", "O_UavTerminal", 150, "gps"],
-//	["UAV Terminal (AAF)", "I_UavTerminal", 150, "gps"],
 	["GPS", "ItemGPS", 100, "gps"],
 	["First Aid Kit", "FirstAidKit", 25, "item"],
 	["Medikit", "Medikit", 150, "item"],
@@ -651,7 +617,7 @@ genObjectsArray = compileFinal str
 [
 	["Empty Ammo Crate", "Box_NATO_Ammo_F", 200, "ammocrate"],
 	//["Metal Barrel", "Land_MetalBarrel_F", 25, "object"],
-	//["Toilet Box", "Land_ToiletBox_F", 25, "object"],
+	["Toilet Box", "Land_ToiletBox_F", 25, "object"],
 	["Lamp Post (Harbour)", "Land_LampHarbour_F", 100, "object"],
 	["Lamp Post (Shabby)", "Land_LampShabby_F", 100, "object"],
 	["Boom Gate", "Land_BarGate_F", 150, "object"],
@@ -889,21 +855,21 @@ colorsArray = compileFinal str
 			["Purple", _color + "(0.1,0,0.3,1)"], // #(argb,8,8,3)color(0.8,0,1,0.1)
 			["NATO Tan", _texDir + "nato.jpg"], // #(argb,8,8,3)color(0.584,0.565,0.515,0.3)
 			["CSAT Brown", _texDir + "csat.jpg"], // #(argb,8,8,3)color(0.624,0.512,0.368,0.3)
-			["AAF Green", _texDir + "aaf.jpg"], // #(argb,8,8,3)color(0.546,0.59,0.363,0.2)
-			["Trippy", _texDir + "rainbow.jpg"],
-			["Carbon", _texDir + "carbon.jpg"],
-			["Rusty", _texDir + "rusty.jpg"],
-			["Denim", _texDir + "denim.jpg"],
-			["Psych", _texDir + "psych.jpg"],
-			["Leopard", _texDir + "leopard.jpg"],
-			["Holland!", _texDir + "holland.jpg"], //GoT addition (dutch flag)
-			["'Murica", _texDir + "murica.jpg"],
-			["Confederate", _texDir + "confederate.jpg"],
-			["Union Jack", _texDir + "unionjack.jpg"],
-			["Yellow Camo", _texDir + "camo_fuel.jpg"],
-			["Orange Camo", _texDir + "camo_fack.jpg"],
-			["Red Camo", _texDir + "camo_deser.jpg"],
-			["Pink Camo", _texDir + "camo_pank.jpg"]
+			["AAF Green", _texDir + "aaf.jpg"] // #(argb,8,8,3)color(0.546,0.59,0.363,0.2)
+			// ["Trippy", _texDir + "rainbow.jpg"],
+			// ["Carbon", _texDir + "carbon.jpg"],
+			// ["Rusty", _texDir + "rusty.jpg"],
+			// ["Denim", _texDir + "denim.jpg"],
+			// ["Psych", _texDir + "psych.jpg"],
+			// ["Leopard", _texDir + "leopard.jpg"],
+			// ["Holland!", _texDir + "holland.jpg"], //GoT addition (dutch flag)
+			// ["'Murica", _texDir + "murica.jpg"],
+			// ["Confederate", _texDir + "confederate.jpg"],
+			// ["Union Jack", _texDir + "unionjack.jpg"],
+			// ["Yellow Camo", _texDir + "camo_fuel.jpg"],
+			// ["Orange Camo", _texDir + "camo_fack.jpg"],
+			// ["Red Camo", _texDir + "camo_deser.jpg"],
+			// ["Pink Camo", _texDir + "camo_pank.jpg"]
 		]
 	],
 	[ // Kart colors

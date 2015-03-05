@@ -4,10 +4,20 @@
 //	@file Name: FAR_lastResort.sqf
 //	@file Author: AgentRev
 
-private ["_hasCharge", "_hasSatchel", "_mineType", "_pos", "_mine"];
+private ["_hasCharge", "_hasSatchel", "_mineType", "_pos", "_mine", "_shout"];
 
 _hasCharge = "DemoCharge_Remote_Mag" in magazines player;
 _hasSatchel = "SatchelCharge_Remote_Mag" in magazines player;
+
+_shout = 	[									// ["filename", volume, bomb timer]
+				["lastresort", 0.7, 1.75],
+				["croods", 3, 1.8],
+				["yililili", 0.5, 1.9],
+				["didibutton", 1.6, 2.2],
+				["diehard", 4, 2],
+				["scarface", 3, 2.1]
+			] call BIS_fnc_selectRandom;
+		
 
 if !(player getVariable ["performingDuty", false]) then
 {
@@ -16,7 +26,7 @@ if !(player getVariable ["performingDuty", false]) then
 		if (["Perform your duty?", "", "Yes", "No"] call BIS_fnc_guiMessage) then
 		{
 			player setVariable ["performingDuty", true];
-			playSound3D [call currMissionDir + "client\sounds\lastresort.wss", vehicle player, false, getPosASL player, 0.7, 1, 1000];
+			playSound3D [call currMissionDir + "client\sounds\" + (_shout select 0) + ".wss", vehicle player, false, getPosASL player, (_shout select 1), 1, 1000];
 
 			if (_hasSatchel) then
 			{
@@ -29,7 +39,7 @@ if !(player getVariable ["performingDuty", false]) then
 				player removeMagazine "DemoCharge_Remote_Mag";
 			};
 
-			sleep 1.75;
+			sleep (_shout select 2);
 
 			_pos = getPosATL player;
 			_pos set [2, (_pos select 2) + 0.5];
