@@ -57,12 +57,12 @@ for "_i" from 1 to _nbUnits do
 		case ((_i + 5) % 7 == 0):
 		{
 			_unit addUniform "rhs_uniform_cu_ocp";
-			_unit addBackpack "rhsusf_assault_eagleaiii_coy";
+			_unit addBackpack "rhs_assault_umbts";
 			_unit addWeapon "rhs_m4a1_grip_acog3";
-			_unit addMagazine "rhs_m136_mag";
-			_unit addWeapon "rhs_weap_M136";
-			_unit addMagazine "rhs_m136_mag";
-			_unit addMagazine "rhs_m136_mag";
+			_unit addMagazine "rhs_rpg7_PG7VL_mag";
+			_unit addWeapon "rhs_weap_rpg7";
+			_unit addMagazine "rhs_rpg7_PG7VL_mag";
+			_unit addMagazine "rhs_rpg7_PG7VR_mag";
 		};
 		// Rifleman
 		default

@@ -25,7 +25,10 @@ civilianVehicles =
 	"rhs_uaz_vmf",
 	"rhs_uaz_vdv",
 	"rhs_uaz_vv",
-	"rhs_uaz_msv",
+	"RHS_Ural_Civ_01",
+	"RHS_Ural_Civ_02",
+	"RHS_Ural_Civ_03",
+	"RHS_Civ_Truck_02_Covered_F",
 	"C_Offroad_01_F",
 	"I_G_Offroad_01_F"
 ];
@@ -34,6 +37,8 @@ civilianVehicles =
 lightMilitaryVehicles =
 [
 	"B_Quadbike_01_F",
+	"O_Truck_02_transport_F",
+	"I_Truck_02_transport_F",
 	"O_Quadbike_01_F",
 	"I_Quadbike_01_F",
 	"I_G_Quadbike_01_F",
@@ -164,7 +169,7 @@ vehicleWeapons =
 	"hlc_rifle_augpara",
 	"hlc_rifle_M14",
 	"hlc_rifle_akm",
-	"hlc_rifle_FAL5061",
+	// "hlc_rifle_FAL5061",  --bugged in arma3 v1.4 (causes clientinventory issues)
 	"hlc_rifle_g3a3",
 	"hlc_rifle_aug",
 	"rhs_weap_m249_pip",

@@ -855,7 +855,8 @@ colorsArray = compileFinal str
 			["Purple", _color + "(0.1,0,0.3,1)"], // #(argb,8,8,3)color(0.8,0,1,0.1)
 			["NATO Tan", _texDir + "nato.jpg"], // #(argb,8,8,3)color(0.584,0.565,0.515,0.3)
 			["CSAT Brown", _texDir + "csat.jpg"], // #(argb,8,8,3)color(0.624,0.512,0.368,0.3)
-			["AAF Green", _texDir + "aaf.jpg"] // #(argb,8,8,3)color(0.546,0.59,0.363,0.2)
+			["AAF Green", _texDir + "aaf.jpg"], // #(argb,8,8,3)color(0.546,0.59,0.363,0.2)
+			["redkitty (kamaz)", _texDir + "kamaz_rood.jpg"]
 			// ["Trippy", _texDir + "rainbow.jpg"],
 			// ["Carbon", _texDir + "carbon.jpg"],
 			// ["Rusty", _texDir + "rusty.jpg"],

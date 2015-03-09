@@ -33,9 +33,9 @@ switch (_boxType) do
 		_boxItems =
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
-			["wep", ["rhs_weap_rpg26", "rhs_weap_rpg7", "rhs_weap_rshg2", "rhs_weap_fim92", "rhs_weap_M136", "rhs_weap_M136_hedp", "rhs_weap_M136_hp"], RANDOM_BETWEEN(3,5), RANDOM_BETWEEN(1,2)],
+			["wep", ["rhs_weap_rpg26", "rhs_weap_rpg7", "rhs_weap_rshg2", "rhs_weap_rpg7", "rhs_weap_M136", "rhs_weap_M136_hedp", "rhs_weap_M136_hp"], RANDOM_BETWEEN(3,5), RANDOM_BETWEEN(1,2)],
 			["wep", ["rhs_weap_igla", "rhs_weap_fgm148"], RANDOM_BETWEEN(1,2), RANDOM_BETWEEN(1,2)],
-			["mag", ["rhs_mag_rgd5", "rhs_mag_fakel", "rhs_mag_fakels", "rhs_mag_zarya2", "rhs_mag_plamyam", "rhs_mine_pmn2", "rhs_mine_tm62m", "rhs_mag_m67", "rhs_ammo_m84", "rhs_mine_M19_ammo", "DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag"], RANDOM_BETWEEN(3,8)]
+			["mag", ["rhs_mag_rgd5", "rhs_mag_fakel", "rhs_mag_fakels", "rhs_mag_zarya2", "rhs_mag_plamyam", "rhs_mag_m67", "DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag"], RANDOM_BETWEEN(3,8)]
 		];
 	};
 	case "mission_USSpecial":

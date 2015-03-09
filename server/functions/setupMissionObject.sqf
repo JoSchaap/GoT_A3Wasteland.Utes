@@ -8,7 +8,7 @@
 
 if (!isServer) exitWith {};
 
-private ["_object", "_r3fDisabled", "_straightenUp", "_customCode", "_pos"];
+private ["_object", "_r3fDisabled", "_straightenUp", "_customCode", "_pos", "_truckRoll"];
 
 _object = [_this, 0, objNull, [objNull]] call BIS_fnc_param;
 _r3fDisabled = [_this, 1, true, [true]] call BIS_fnc_param;
@@ -30,4 +30,18 @@ if (_straightenUp) then
 if (!isNil "_customCode") then
 {
 	_object call _customCode;
+};
+
+if (_object isKindOf "Truck_02_base_F" && !(_object isKindOf "RHS_Ural_Civ_Base")) then 
+{
+	_truckRoll = [
+		"client\images\vehicletextures\kamaz_rood.jpg",
+		"client\images\vehicletextures\kamaz_geel.jpg",
+		"client\images\vehicletextures\kamaz_groen.jpg",
+		"client\images\vehicletextures\kamaz_blauw.jpg"
+		] call BIS_fnc_selectRandom;
+	
+	_object setVariable ["BIS_enableRandomization", false, true];
+	_object setObjectTextureGlobal [0, _truckRoll];
+	_object setVariable ["A3W_objectTextures", _truckRoll, true];		
 };

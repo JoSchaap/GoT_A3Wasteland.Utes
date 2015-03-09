@@ -9,7 +9,7 @@
 
 if (!isServer) exitWith {};
 
-private ["_markerPos", "_pos", "_type", "_num", "_vehicleType", "_respawnSettings", "_vehicle", "_hitPoint"];
+private ["_markerPos", "_pos", "_type", "_num", "_vehicleType", "_respawnSettings", "_vehicle", "_hitPoint", "_truckRoll"];
 
 _markerPos = _this select 0;
 _type = 0;  //test due to undefined variable errors..
@@ -31,8 +31,8 @@ else
 
 	switch (true) do
 	{
-		case (_num < 8): { _vehicleType = mediumMilitaryVehicles call BIS_fnc_selectRandom; _type = 2 };
-		case (_num < 35): { _vehicleType = lightMilitaryVehicles call BIS_fnc_selectRandom; _type = 1 };
+		case (_num < 10): { _vehicleType = mediumMilitaryVehicles call BIS_fnc_selectRandom; _type = 2 };
+		case (_num < 45): { _vehicleType = lightMilitaryVehicles call BIS_fnc_selectRandom; _type = 1 };
 		default           { _vehicleType = civilianVehicles call BIS_fnc_selectRandom; _type = 0 };
 	};
 };
@@ -84,5 +84,20 @@ if (_vehicleType isKindOf "Offroad_01_armed_base_F") then
 };
 
 if (_type > 1) then { _vehicle setVehicleAmmo (random 1.0) };
+
+// spawn trucks in redkitty textures :)
+if (_vehicle isKindOf "Truck_02_base_F" && !(_vehicle isKindOf "RHS_Ural_Civ_Base")) then 
+{
+	_truckRoll = [
+		"client\images\vehicletextures\kamaz_rood.jpg",
+		"client\images\vehicletextures\kamaz_geel.jpg",
+		"client\images\vehicletextures\kamaz_groen.jpg",
+		"client\images\vehicletextures\kamaz_blauw.jpg"
+	] call BIS_fnc_selectRandom;
+	
+	_vehicle setVariable ["BIS_enableRandomization", false, true];
+	_vehicle setObjectTextureGlobal [0, _truckRoll];
+	_vehicle setVariable ["A3W_objectTextures", _truckRoll, true];		
+};
 
 [_vehicle] call randomWeapons;
