@@ -203,7 +203,7 @@ vehicleAddition =
 vehicleAddition2 =
 [
  	"rhs_mag_m67",
-	"rhs_ammo_m84",
+	"rhs_ammo_mk84",
 	"rhs_mag_rgd5",
 	"rhs_mag_fakels",
 	"rhs_mag_nspn_green"

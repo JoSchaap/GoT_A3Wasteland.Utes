@@ -174,7 +174,7 @@ throwputArray = compileFinal str
 	["PMN-2 AP", "rhs_mine_pmn2", 300],
 	["TM-62M AT", "rhs_mine_tm62m", 350],
 	["M67 Frag Grenade", "rhs_mag_m67", 100],
-	["M84 Stun Grenade", "rhs_ammo_m84", 100],
+	["M84 Stun Grenade", "rhs_ammo_mk84", 100],
 	["M19 AT", "rhs_mine_M19_ammo", 300],
 	["Explosive Charge", "DemoCharge_Remote_Mag", 450],
 	["Explosive Satchel", "SatchelCharge_Remote_Mag", 500]
