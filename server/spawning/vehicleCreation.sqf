@@ -100,4 +100,19 @@ if (_vehicle isKindOf "Truck_02_base_F" && !(_vehicle isKindOf "RHS_Ural_Civ_Bas
 	_vehicle setVariable ["A3W_objectTextures", _truckRoll, true];		
 };
 
+// colorful uaz's (hack job will do a better one later)
+if (_vehicle isKindOf "rhs_uaz_vmf" || _vehicle isKindOf "rhs_uaz_vdv" || _vehicle isKindOf "rhs_uaz_vv") then 
+{
+	_truckRoll = [
+		"client\images\vehicletextures\uaz_rood.jpg",
+		"client\images\vehicletextures\uaz_geel.jpg",
+		"client\images\vehicletextures\uaz_groen.jpg",
+		"client\images\vehicletextures\uaz_blauw.jpg"
+	] call BIS_fnc_selectRandom;
+	
+	_vehicle setVariable ["BIS_enableRandomization", false, true];
+	_vehicle setObjectTextureGlobal [0, _truckRoll];
+	_vehicle setVariable ["A3W_objectTextures", _truckRoll, true];		
+};
+
 [_vehicle] call randomWeapons;
