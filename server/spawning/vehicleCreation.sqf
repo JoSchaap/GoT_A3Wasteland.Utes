@@ -9,7 +9,7 @@
 
 if (!isServer) exitWith {};
 
-private ["_markerPos", "_pos", "_type", "_num", "_vehicleType", "_respawnSettings", "_vehicle", "_hitPoint", "_truckRoll"];
+private ["_markerPos", "_pos", "_type", "_num", "_vehicleType", "_respawnSettings", "_vehicle", "_hitPoint", "_truckRoll", "_truckBack"];
 
 _markerPos = _this select 0;
 _type = 0;  //test due to undefined variable errors..
@@ -97,6 +97,36 @@ if (_vehicle isKindOf "Truck_02_base_F" && !(_vehicle isKindOf "RHS_Ural_Civ_Bas
 	
 	_vehicle setVariable ["BIS_enableRandomization", false, true];
 	_vehicle setObjectTextureGlobal [0, _truckRoll];
+	_vehicle setVariable ["A3W_objectTextures", _truckRoll, true];
+	case (_vehicle isKindOf "Truck_02_base_F"): 
+	{ 
+		_truckBack = [
+			"client\images\vehicletextures\rusty.jpg",
+			"client\images\vehicletextures\skulls.jpg",
+			"client\images\vehicletextures\rainbow.jpg",
+			"client\images\vehicletextures\pink.jpg",
+			"client\images\vehicletextures\psych.jpg"
+		] call BIS_fnc_selectRandom;
+		_vehicle setObjectTextureGlobal [1, _truckBack]; };	
+	};
+
+// some arma 3 vehicles can look more fancy too :)
+if (_vehicle isKindOf "MRAP_03_base_F" || _vehicle isKindOf "Offroad_01_base_F" || _vehicle isKindOf "Quadbike_01_base_F") then 
+{
+	_truckRoll = [
+		"client\images\vehicletextures\rusty.jpg",
+		"client\images\vehicletextures\skulls.jpg",
+		"client\images\vehicletextures\rainbow.jpg",
+		"client\images\vehicletextures\pink.jpg",
+		"client\images\vehicletextures\psych.jpg"
+	] call BIS_fnc_selectRandom;
+	
+	_vehicle setVariable ["BIS_enableRandomization", false, true];
+	_vehicle setObjectTextureGlobal [0, _truckRoll];
+	case (_vehicle isKindOf "MRAP_03_base_F"): 
+	{	
+		_vehicle setObjectTextureGlobal [1, _truckRoll];
+	};
 	_vehicle setVariable ["A3W_objectTextures", _truckRoll, true];		
 };
 
